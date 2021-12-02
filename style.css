@@ -18,7 +18,10 @@ ul{
 
 #main{
     width: 100%;
-    height: 100vh;
+}
+
+.navigationBar {
+    height: 100px;
 }
 
 nav {
@@ -72,6 +75,7 @@ nav ul li a:hover{
 
 .content{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .myimage{
@@ -132,6 +136,7 @@ nav ul li a:hover{
     align-items: center;
     width: 90%;
     margin: auto;
+    flex-wrap: wrap;
 }
 
 .aboutimg{
@@ -140,6 +145,11 @@ nav ul li a:hover{
     height: 600px;
     justify-content: center;
     align-items: center;
+}
+
+.aboutimg img {
+    width: 80%;
+    height: 50%;
 }
 
 .about-desc{
@@ -169,5 +179,43 @@ nav ul li a:hover{
     border-radius: 20px;
     margin-top: 20px;
     padding: 10px 20px;
+}
+
+@media (max-width: 767px){
+    .myimage{
+        width: 100%;
+        height: 50%;
+    }
+
+    .desc {
+        width: 100%;
+        height: auto;
+        padding: 0px 0px;
+    }
+
+    .desc h1 {
+        text-align: center;
+    }
+
+    .desc p{
+        text-align: center;
+    }
+
+    .morebtn {
+        margin: 0px auto;
+    }
+
+    #about{
+        padding-top: 60px;
+    }
+
+    .aboutimg {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-desc {
+        width: 100%;
+    }
 }
 
