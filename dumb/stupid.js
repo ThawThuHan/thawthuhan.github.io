@@ -2,6 +2,10 @@ const box = document.querySelector(".box");
 let yesButton = document.querySelector('#yes');
 const noButton = document.querySelector("#no");
 const restart = document.createElement("a");
+const nope = new Audio();
+const ohh = new Audio();
+nope.src = "Nope.mp3";
+ohh.src = "rap.mp3";
 
 noButton.addEventListener('click', () => {
     let top = Math.round(Math.random() * 100);
@@ -17,6 +21,7 @@ noButton.addEventListener('click', () => {
     box.style.transform = "none";
     box.style.top = top + "%";
     box.style.left = left + "%";
+    nope.play();
 })
 
 yesButton.onclick = () => {
@@ -28,4 +33,5 @@ yesButton.onclick = () => {
     restart.innerText = "Test again"
     restart.setAttribute("href", " ");
     box.appendChild(restart);
+    ohh.play();
 }
