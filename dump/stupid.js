@@ -3,7 +3,7 @@ let yesButton = document.querySelector('#yes');
 const noButton = document.querySelector("#no");
 const restart = document.createElement("a");
 
-yesButton.addEventListener('click', () => {
+noButton.addEventListener('click', () => {
     let top = Math.round(Math.random() * 100);
     let left = Math.round(Math.random() * 100);
     let boxHeightPercentage = Math.round((box.offsetHeight / window.innerHeight) * 100);
@@ -19,7 +19,7 @@ yesButton.addEventListener('click', () => {
     box.style.left = left + "%";
 })
 
-noButton.onclick = () => {
+yesButton.onclick = () => {
     box.firstElementChild.innerHTML = "I knew it! :3";
     box.lastElementChild.remove();
     restart.innerText = "Test again"
