@@ -21,6 +21,9 @@ noButton.addEventListener('click', () => {
 
 yesButton.onclick = () => {
     box.firstElementChild.innerHTML = "I knew it! :3";
+    box.style.top = "50%";
+    box.style.left = "50%";
+    box.style.transform = "translate(-50%, -50%)";
     box.lastElementChild.remove();
     restart.innerText = "Test again"
     restart.setAttribute("href", " ");
