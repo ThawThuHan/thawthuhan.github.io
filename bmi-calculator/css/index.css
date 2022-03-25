@@ -1,0 +1,131 @@
+html,
+body {
+    background-color: #ccc;
+}
+
+.container {
+    width: 40%;
+    margin: 0px auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 5px gray;
+    background-color: white;
+}
+
+.gender {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.gender>button {
+    width: 40%;
+    height: 100px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 4px 4px 5px rgb(192, 192, 192);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.gender>button>i {
+    padding-bottom: 20px;
+}
+
+.active {
+    background-color: hsla(270, 94%, 25%, 1);
+    color: white;
+}
+
+.input {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.input>div {
+    width: 40%;
+
+}
+
+.show-number {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100px;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 5px solid #ccc;
+    text-align: center;
+    padding: 10 px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: inset 2px 2px 5px gray, inset -2px -2px 5px #ccc;
+}
+
+.show-number>span {
+    /* color: white; */
+    font-size: 1.5rem;
+}
+
+.slider {
+    appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: hsla(270, 94%, 25%, 1);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.show-result {
+    text-align: center;
+    /* height: 50px; */
+    width: 100%;
+    /* color: white; */
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.calculate {
+    width: 90%;
+    margin: 0px auto;
+}
+
+.calculate>button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgb(53, 52, 52);
+    font-size: 1.5rem;
+    color: #ccc;
+    letter-spacing: 5px;
+}
+
+.result {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 425px) {
+    .container {
+        width: 100%;
+    }
+}
