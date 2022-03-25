@@ -2,8 +2,8 @@ const male = document.querySelector("#male");
 const female = document.querySelector("#female");
 const heightSlide = document.querySelector('#height');
 const weightSlide = document.querySelector('#weight');
-const heightNumber = document.querySelector(".height").firstElementChild;
-const weightNumber = document.querySelector(".weight").firstElementChild;
+const heightNumber = document.querySelector(".height");
+const weightNumber = document.querySelector(".weight");
 const calculateBtn = document.querySelector("#calculate")
 
 let gender = "male", height, weight;
@@ -26,17 +26,27 @@ female.onclick = () => {
     }
 };
 
-heightNumber.innerText = heightSlide.value + " inches";
-weightNumber.innerText = weightSlide.value + " lb";
+heightNumber.value = heightSlide.value;
+weightNumber.value = weightSlide.value;
 
 heightSlide.oninput = function () {
-    heightNumber.innerText = heightSlide.value + " inches";
+    heightNumber.value = heightSlide.value;
     height = heightSlide.value;
 }
 
+heightNumber.oninput = () => {
+    heightSlide.value = heightNumber.value;
+    height = heightNumber.value;
+}
+
 weightSlide.oninput = function () {
-    weightNumber.innerText = weightSlide.value + " lb";
+    weightNumber.value = weightSlide.value;
     weight = weightSlide.value;
+}
+
+weightNumber.oninput = () => {
+    weightSlide.value = weightNumber.value;
+    weight = weightNumber.value;
 }
 
 calculateBtn.onclick = function () {

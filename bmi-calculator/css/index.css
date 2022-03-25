@@ -43,7 +43,7 @@ body {
     color: white;
 }
 
-.input {
+.input-box {
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -51,9 +51,16 @@ body {
     flex-wrap: wrap;
 }
 
-.input>div {
+.input-box>div {
     width: 40%;
+}
 
+.input {
+    border: none;
+    display: inline;
+    width: 60%;
+    font-size: var(--fontSize);
+    text-align: center;
 }
 
 .show-number {
