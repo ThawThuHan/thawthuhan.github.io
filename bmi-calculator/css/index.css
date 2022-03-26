@@ -71,6 +71,7 @@ body {
     width: 60%;
     font-size: var(--fontSize);
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .show-number {
