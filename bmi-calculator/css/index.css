@@ -71,7 +71,6 @@ body {
     width: 60%;
     font-size: var(--fontSize);
     text-align: center;
-    margin-bottom: 10px;
 }
 
 .show-number {
@@ -86,7 +85,7 @@ body {
     padding: 10 px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     box-shadow: inset 2px 2px 5px gray, inset -2px -2px 5px #ccc;
 }
 
