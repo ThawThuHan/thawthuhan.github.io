@@ -67,7 +67,7 @@ calculateBtn.onclick = function () {
         console.log(gender);
         if (bmi < 17.8) {
             removeClass("under")
-        } else if (17.8 > bmi && bmi < 23.6) {
+        } else if (17.8 > bmi || bmi < 23.6) {
             removeClass("normal");
         } else {
             removeClass("over");
@@ -75,7 +75,7 @@ calculateBtn.onclick = function () {
     } else {
         if (bmi < 17.8) {
             removeClass("under");
-        } else if (17.8 > bmi && bmi < 25.6) {
+        } else if (17.8 > bmi || bmi < 25.6) {
             removeClass("normal");
         } else {
             removeClass("over");
