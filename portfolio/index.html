@@ -1,63 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Website</title>
+    <title>Thaw Thu Han</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="images/icons8-circled-user-male-skin-type-6-48.png">
-    <script src="https://kit.fontawesome.com/e1a5cac6e2.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <section id=main>
-        <div class="navigationBar">
-            <nav>
-                <a href="#" class="logo"><img src="images/icons8-heart.gif"/></a>
-                <ul class="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Skill</a></li>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#">contact</a></li>
-                </ul>
-                <a href="#" class="hey">Say Hey!</a>
-                <div class="menuBar">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </nav>
 
-        </div>
-        <div class="content">
-            <div class="myimage">
-                <img src="./images/thawthuhan.svg" alt="">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+    <main>
+        <section class="menu">
+            <div class="nav">
+                <h1 class="title">Portfolio</h1>
+                <div class="menu-items">
+                    <span class="text-primary"><i class="fa-solid fa-house me-3"></i> Home</span>
+                    <span><i class="fa-solid fa-user me-3"></i> About</span>
+                    <!-- <span><i class="fa-solid fa-code me-3"></i> Skill</span> -->
+                    <span><i class="fa-solid fa-briefcase me-3"></i> Project</span>
+                    <span><i class="fa-solid fa-envelope me-3"></i>Contact</span>
+                </div>
+                <h6 style="color: gray;">&copy; Copyright by Thaw Thu Han</h6>
             </div>
-            <div class="desc">
-                <h1>I'm Thaw Thu Han.</h1>
-                <p>I make a Personal Website for testing. this website only use in HTML and CSS. Because I still learning JavaScript.<br>
-                    わたしは "Thaw Thu Han" です。わたしは "HTML" と "CSS"　べんきょうしました。このWebサイト は わたしのです。
-                </p>
-                <a href="#" class="morebtn">See More</a>
+        </section>
+        <section class="body">
+            <!-- <h1 class="title">Home</h1> -->
+            <div id="home" class="">
+                <div class="primary">
+                    <div class="mb-4">
+                        <h3>Hello, My name is <span class="text-primary">Thaw Thu Han</span>.</h3>
+                        <h4>I'm a Web Developer.</h4>
+                    </div>
+                    <p class="mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel cumque repudiandae
+                        reprehenderit
+                        eaque dignissimos eveniet laborum natus dolore debitis, sequi quisquam qui porro, inventore
+                        distinctio nobis dolorum hic? Ipsum, expedita?</p>
+                    <button class="btn btn-outline-primary rounded-pill w-50">More About Me</button>
+                </div>
+                <div class="secondary">
+                    <img src="images/thawthuhan_portfolio1.png" alt="Profile Image">
+                    <div class="mt-4">
+                        <i class="fa-brands fa-facebook fa-2xl fa-flip mx-2 text-primary"
+                            style="--fa-animation-duration: 5s;"></i>
+                        <i class="fa-brands fa-linkedin fa-2xl fa-flip mx-2 text-primary"
+                            style="--fa-animation-duration: 5s;"></i>
+                        <i class="fa-brands fa-telegram fa-2xl fa-flip mx-2 text-primary"
+                            style="--fa-animation-duration: 5s;"></i>
+                        <i class="fa-brands fa-viber fa-2xl fa-flip mx-2 text-primary"
+                            style="--fa-animation-duration: 5s;"></i>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-    <section id="about">
-        <div class="aboutimg">
-            <img src="./images/about.png" alt="">
-        </div>
-        <div class="about-desc">
-            <h1>About Me</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere eum animi amet doloribus architecto, dolorem eligendi qui nemo atque, numquam non ipsum sapiente similique ad voluptatem voluptate esse expedita ipsam.</p>
-            <div class=profile>
-            <pre >
-Name    :   Thaw Thu Han
-BOD     :   24-05-1996
-Address :   Yangon/Myanmar
-Ph no.  :   +959xxxxxxxxx</pre>
-        </div>
-            <div class="cv-btn">
-                <a href="./assets/Thaw Thu Han CV-G-V1.2.1.pdf" target="_blink" style="color: white;">Download CV</a>
+
+            <div id="about" class="d-none">
+                <div class="about-container">
+                    <h1 class="title">About Me</h1>
+                    <div class="mb-5">
+                        <h3 class="text-primary mt-5">I'm Thaw Thu Han.</h3>
+                        <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur,
+                            saepe delectus. Itaque
+                            ipsam ipsa pariatur ex veritatis debitis repudiandae quidem velit sapiente quo magnam
+                            officiis sunt fuga eius aut vero, vel odit sit nisi labore. Architecto corrupti ducimus
+                            dolore autem doloremque alias, error omnis reiciendis, quam magnam quae nihil dolor
+                            iure.
+                            Magnam, qui necessitatibus quos, architecto odio sunt ad officiis molestias dolore
+                            eveniet
+                            in vitae consequatur reiciendis praesentium iusto quis.
+                        </p>
+                    </div>
+                    <div class="d-flex flex-wrap mb-4">
+                        <div class="profile">
+                            <h3 class="text-white border-bottom d-inline-block">Personal Information</h3>
+                            <table class="profile-table mb-4">
+                                <tr>
+                                    <td>BOD</td>
+                                    <td>:</td>
+                                    <td>24-05-1996</td>
+                                </tr>
+                                <tr>
+                                    <td>Email</td>
+                                    <td>:</td>
+                                    <td>thawthuhan24@outlook.com</td>
+                                </tr>
+                                <tr>
+                                    <td>Phone</td>
+                                    <td>:</td>
+                                    <td>09 777 400 744</td>
+                                </tr>
+                                <tr>
+                                    <td>Address</td>
+                                    <td>:</td>
+                                    <td>Yangon/Myanmar</td>
+                                </tr>
+                            </table>
+                            <button class="btn btn-primary rounded-pill mt-auto">Download Resume</button>
+                        </div>
+                        <div class="skill">
+                            <h3 class="text-white border-bottom d-inline-block">My Skill</h3>
+                            <div class="m-2 skill-logo">
+                                <span>
+                                    <img src="images/logos/html5.png" alt="">
+                                    <p>HTML</p>
+                                </span>
+                                <span>
+                                    <img src="images/logos/css3.png" alt="">
+                                    <p>CSS</p>
+                                </span>
+                                <span>
+                                    <img src="images/logos/js.png" alt="">
+                                    <p>Javascript</p>
+                                </span>
+                                <span>
+                                    <img src="images/logos/react.png" alt="">
+                                    <p>React Js</p>
+                                </span>
+                                <span>
+                                    <img src="images/logos/php.png" alt="">
+                                    <p>PHP</p>
+                                </span>
+                                <span>
+                                    <img src="images/logos/laravel.png" alt="">
+                                    <p>Laravel</p>
+                                </span>
+                                <span>
+                                    <img src="images/logos/sql-database.png" alt="">
+                                    <p>SQL Database</p>
+                                </span>
+                                <span>
+                                    <img src="images/logos/linux-logo.png" alt="">
+                                    <p>Linux</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap">
+                        <div class="experience">
+                            <div>
+                                <h3 class="text-white border-bottom d-inline-block">Work Experience</h3>
+                            </div>
+                            <div class="timeline">
+                                <div class="timeline-content">
+                                    <p>11/2017 - 5/2021</p>
+                                    <h5>Network & System Engineer</h5>
+                                    <h6>at Myanmar Oriental Bank</h6>
+                                </div>
+                                <div class="timeline-content">
+                                    <p>6/2021 - 12/2021</p>
+                                    <h5>Network Security Engineer</h5>
+                                    <h6>at ARK Preminum Solution</h6>
+                                </div>
+                                <div class="timeline-content">
+                                    <p>1/2020 - Present</p>
+                                    <h5>Web Developer & System Developer</h5>
+                                    <h6>Freelance</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="education">
+                            <div>
+                                <h3 class="text-white border-bottom d-inline-block">Education Background</h3>
+                            </div>
+                            <div class="p-4">
+                                <div class="mb-4">
+                                    <h4 class="text-white mb-3">Certification</h4>
+                                    <div class="d-flex mb-3">
+                                        <div class="">
+                                            <img src="images/logos/cisco.jpeg" style="width: 50px; height: 50px;"
+                                                alt="">
+                                        </div>
+                                        <div class="ms-4 text-white">
+                                            <div class="fs-6">Cisco Certified Network Associate Routing and
+                                                Switching</div>
+                                            <div class="text-muted">issued May 2018 . Expried May 2021</div>
+                                            <div class="text-muted">Credential ID 4114L8XD9344Q0WV</div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mb-3">
+                                        <div class="">
+                                            <img src="images/logos/fortinet.jpeg" style="width: 50px; height: 50px;"
+                                                alt="">
+                                        </div>
+                                        <div class="ms-4 text-white">
+                                            <div class="fs-6">NSE 2 Network Security Associate</div>
+                                            <div class="text-muted">issued Apr 2020 . Expries Apr 2022</div>
+                                            <div class="text-muted">Credential ID 6QvMPDbVlc</div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="">
+                                            <img src="images/logos/Aviatrix.jpeg" style="width: 50px; height: 50px;"
+                                                alt="">
+                                        </div>
+                                        <div class="ms-4 text-white">
+                                            <div class="fs-6">Aviatrix Certified Engineer - Multi-Cloud Network
+                                                Associate
+                                            </div>
+                                            <div class="text-muted">Issued Aug 2020 · Expires Aug 2023</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="text-white mb-3">Diploma</h4>
+                                    <div class="d-flex mb-3">
+                                        <div class="">
+                                            <img src="images/logos/lincoln-university.png"
+                                                style="width: 50px; height: 50px;" alt="">
+                                        </div>
+                                        <div class="ms-4 text-white">
+                                            <div class="fs-6">Executive Diploma in Network and Server Infrastructure
+                                            </div>
+                                            <div class="text-muted">period Dec 2018 - July 2019</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+
+        </section>
+    </main>
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/b91c45f7be.js" crossorigin="anonymous"></script>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- custom js -->
+    <script src="script.js"></script>
 </body>
+
 </html>

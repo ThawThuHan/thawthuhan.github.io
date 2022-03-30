@@ -58,7 +58,7 @@ calculateBtn.onclick = function () {
     console.log();
     let bmi = (703 * weight) / (height ** 2);
     if (!isNaN(bmi)) {
-        result.firstElementChild.innerHTML = bmi.toFixed(1) + " BIM";
+        result.firstElementChild.innerHTML = bmi.toFixed(1) + " BMI";
     } else {
         result.firstElementChild.innerHTML = "Error!";
     }
