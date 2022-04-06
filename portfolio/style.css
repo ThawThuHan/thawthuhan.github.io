@@ -159,6 +159,55 @@ main {
     width: 50%;
 }
 
+#project {
+    padding: 20px;
+    color: white;
+    width: 100%;
+}
+
+.project-container {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+.project-card {
+    height: 250px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.project-card-link {
+    display: none;
+    text-decoration: none;
+    color: #ccc;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 10px; 
+}
+
+.project-card:hover .project-card-link {
+    display: inline-block;
+}
+
+.project-card:hover img {
+    filter: brightness(60%);
+}
+
 @media (max-width: 762px) {
     .body {
         width: 100%;
