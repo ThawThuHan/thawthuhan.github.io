@@ -52,10 +52,17 @@ main {
 
 /* home section */
 #home {
-    box-sizing: border-box;
-    margin: 20px auto;
+    padding: 20px;
     display: flex;
-    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .primary {
@@ -170,6 +177,7 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 10px;
+    margin-top: 20px;
 }
 
 .project-card {
@@ -208,13 +216,40 @@ main {
     filter: brightness(60%);
 }
 
-@media (max-width: 762px) {
+@media (max-width: 768px) {
     .body {
         width: 100%;
+        display: block;
     }
 
     .menu {
         display: none;
+    }
+
+    .home-container {
+        flex-direction: column-reverse;
+    }
+
+    .primary {
+        width: 100%;
+        align-items: center;
+    }
+
+    .primary .header-text {
+        text-align: center;
+    }
+
+    .primary p {
+        text-align: center;
+    }
+
+    .secondary {
+        width: 100%;
+        margin: 30px 0px;
+    }
+
+    .secondary img {
+        width: 30%;
     }
 
     .profile {
