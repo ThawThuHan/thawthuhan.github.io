@@ -9,12 +9,14 @@ const menuliTag = document.querySelectorAll(".hanbuger-menu ul li");
 menuToggle.addEventListener("click", (event) => {
     if (hanbugerMenu.classList.contains("showed")) {
         hanbugerMenu.classList.remove("showed");
+        hanbugerMenu.style.zIndex = "-1";
         hanbugerMenu.style.opacity = "0";
         menuliTag.forEach(e => {
             e.classList.remove("menu-animation")
         })
     } else {
         hanbugerMenu.classList.add("showed");
+        hanbugerMenu.style.zIndex = "1";
         hanbugerMenu.style.opacity = "1";
         menuliTag.forEach(e => {
             e.classList.add("menu-animation")
@@ -27,6 +29,7 @@ menuliTag.forEach(e => {
         let target = event.target.innerText;
         if (hanbugerMenu.classList.contains("showed")) {
             hanbugerMenu.classList.remove("showed");
+            hanbugerMenu.style.zIndex = "-1";
             hanbugerMenu.style.opacity = "0";
             menuliTag.forEach(e => {
                 e.classList.remove("menu-animation")
