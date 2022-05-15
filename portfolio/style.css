@@ -15,6 +15,42 @@ main {
     background-color: #222222;
 }
 
+.menu-toggle {
+    padding: 20px;
+    display: none;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+}
+
+.hanbuger-menu {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: #222222;
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.hanbuger-menu ul li {
+    list-style: none;
+    color: #ccc;
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px 0px;
+    user-select: none;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.menu-animation {
+    transform: translateY(-10px);
+}
+
 .nav {
     height: 100vh;
     position: sticky;
@@ -224,6 +260,18 @@ main {
 
     .menu {
         display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .hanbuger-menu {
+        display: flex;
+    }
+
+    #home {
+        height: 100vh;
     }
 
     .home-container {
