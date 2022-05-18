@@ -83,6 +83,7 @@ main {
     padding: 0px 20px;
     cursor: pointer;
     text-align: start;
+    user-select: none;
 }
 
 .body {
