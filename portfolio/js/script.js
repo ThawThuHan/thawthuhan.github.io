@@ -1,6 +1,7 @@
 const menuItems = document.querySelector(".menu-items");
 const home = document.querySelector("#home");
 const about = document.querySelector("#about");
+const contact = document.querySelector("#contact");
 const homeAboutBtn = document.querySelector("#home-about");
 const project = document.querySelector("#project");
 const menuToggle = document.querySelector(".menu-toggle");
@@ -30,14 +31,22 @@ let changeNavigation = (target) => {
         home.classList.remove('d-none');
         about.classList.add('d-none');
         project.classList.add('d-none');
+        contact.classList.add('d-none');
     } else if (target == "About") {
         about.classList.remove('d-none');
         home.classList.add('d-none');
         project.classList.add('d-none');
+        contact.classList.add('d-none');
     } else if (target == "Project") {
         project.classList.remove('d-none');
         about.classList.add('d-none');
         home.classList.add('d-none');
+        contact.classList.add('d-none');
+    } else if (target == "Contact") {
+        contact.classList.remove('d-none');
+        about.classList.add('d-none');
+        home.classList.add('d-none');
+        project.classList.add('d-none');
     }
 }
 
