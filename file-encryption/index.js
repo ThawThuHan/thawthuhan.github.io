@@ -13,6 +13,13 @@ encryptInput.addEventListener('change', e => {
     if (fileList.length !== 0) {
         file = fileList[0];
     }
+
+    if (file.size > 15000000) {
+        alert("Invalid file! only max 15MB allowed...");
+        e.target.value = '';
+        return;
+    }
+    file = fileList[0];
 })
 
 decryptInput.addEventListener('change', e => {
@@ -27,7 +34,7 @@ decryptInput.addEventListener('change', e => {
     }
 })
 
-function encrypt() {
+async function encrypt() {
     reader.onload = e => {
         let data = e.target.result;
         if (encPasswordInput.value.length == 0) {
