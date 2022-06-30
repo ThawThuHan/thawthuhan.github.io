@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body style="background-color: #555;">
+    <div class="col-12 col-md-6 mx-auto p-4 text-white">
+        <div class="custom-style">
+            <h4>Encrypt File</h4>
+            <div class="form-group mb-3">
+                <label for="encryptFile">Choose File</label>
+                <input class="form-control form-control-sm" type="file" id="encryptFile">
+            </div>
+            <div class="form-group mb-3">
+                <label for="enc-password">Enter Passphrase</label>
+                <input class="form-control form-control-sm" type="password" id="enc-password">
+            </div>
+            <button class="btn btn-danger" onclick="encrypt()">Encrypt</button>
+            <a id="enc-download" class="d-none btn btn-outline-primary">Download</a>
+        </div>
+
+        <div class="custom-style">
+            <h4>Decrypt File</h4>
+            <div class="form-group mb-3">
+                <label for="decryptFile">Choose File</label>
+                <input class="form-control form-control-sm" type="file" id="decryptFile" accept=".enc-thaw">
+            </div>
+            <div class="form-group mb-3">
+                <label for="dec-password">Enter Passphrase</label>
+                <input class="form-control form-control-sm" type="password" id="dec-password">
+            </div>
+            <button class="btn btn-success" onclick="decrypt()">Decrypt</button>
+            <a id="dec-download" class="d-none btn btn-outline-primary">Download</a>
+        </div>
+    </div>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+        </script>
+
+    <!-- CryptoJs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+        integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+
+    <!-- Custom Js -->
+    <script src="index.js"></script>
+</body>
+
+</html>
