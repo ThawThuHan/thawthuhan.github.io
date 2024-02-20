@@ -247,7 +247,7 @@ main {
     transform: translate(-50%, -50%);
     border: 2px solid #ccc;
     border-radius: 20px;
-    padding: 5px 10px; 
+    padding: 5px 10px;
 }
 
 .project-card:hover .project-card-link {
