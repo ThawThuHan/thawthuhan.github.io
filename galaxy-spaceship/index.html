@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Galaxy Spaceship</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            background: #0c0d14;
+            color: #fff;
+            font-family: sans-serif;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #ui {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            gap: 8px 24px;
+            padding: 12px 16px;
+        }
+
+        #ui h2,
+        #ui p {
+            margin: 0;
+        }
+
+        #ui h2 {
+            font-size: 20px;
+        }
+
+        #ui p {
+            color: #a4a8b8;
+            font-size: 14px;
+        }
+
+        #ui #status {
+            margin-left: auto;
+        }
+
+        #game {
+            flex: 1;
+            min-height: 0;
+            margin: 0 16px 16px;
+            border: 1px solid #2a2e3f;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        canvas {
+            display: block;
+            cursor: crosshair;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="ui">
+        <h2>🌌 Galaxy Spaceship</h2>
+        <p>Drag mouse back from Rocket to aim & launch!</p>
+        <p id="status">Status: Ready to Launch</p>
+    </div>
+    <div id="game">
+        <canvas id="gameCanvas"></canvas>
+    </div>
+
+    <script src="js/MathVector.js"></script>
+    <script src="js/CelestialBody.js"></script>
+    <script src="js/PhysicsStep.js"></script>
+    <script src="js/Spaceship.js"></script>
+    <script src="js/game.js"></script>
+</body>
+
+</html>
