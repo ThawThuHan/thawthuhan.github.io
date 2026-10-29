@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Galaxy Spaceship</title>
     <style>
         html,
@@ -16,6 +17,7 @@
             color: #fff;
             font-family: sans-serif;
             overflow: hidden;
+            overscroll-behavior: none;
             display: flex;
             flex-direction: column;
         }
@@ -46,6 +48,22 @@
             margin-left: auto;
         }
 
+        #restart {
+            padding: 6px 12px;
+            border: 1px solid #2a2e3f;
+            border-radius: 6px;
+            background: #161927;
+            color: #fff;
+            font: inherit;
+            font-size: 14px;
+            cursor: pointer;
+            touch-action: manipulation;
+        }
+
+        #restart:hover {
+            background: #1f2336;
+        }
+
         #game {
             flex: 1;
             min-height: 0;
@@ -58,15 +76,20 @@
         canvas {
             display: block;
             cursor: crosshair;
+            touch-action: none;
+            user-select: none;
+            -webkit-user-select: none;
+            -webkit-touch-callout: none;
         }
     </style>
 </head>
 
 <body>
     <div id="ui">
-        <h2>🌌 Galaxy Spaceship</h2>
+        <h2>🌌 Galaxy Spaceship Game</h2>
         <p>Drag mouse back from Rocket to aim & launch!</p>
         <p id="status">Status: Ready to Launch</p>
+        <button id="restart" type="button" title="New game (R)">↻ New game</button>
     </div>
     <div id="game">
         <canvas id="gameCanvas"></canvas>
